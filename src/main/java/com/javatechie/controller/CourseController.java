@@ -60,9 +60,13 @@ public class CourseController {
     public String healthCheck() {
         return "UP";
     }
-
+    @GetMapping("/test")
+    public String test() {
+        return "Hello Techie , AWS CICD Example testing !";
+    }
     @GetMapping("/welcome")
     public String greetings() {
         return "Hello Techie , AWS CICD Example working fine !";
     }
+
 }
